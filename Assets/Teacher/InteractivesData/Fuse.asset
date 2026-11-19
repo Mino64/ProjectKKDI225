@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEnabled: 1
   type: 0
-  inventoryName: fuse
-  inventoryIcon: {fileID: 21300000, guid: e89227bd5f3646c4cb4a38db190f5499, type: 3}
+  inventoryName: Syringe
+  inventoryIcon: {fileID: 3485184536122157715, guid: 21e14dcd1632654439a8b871edd835ce, type: 3}
   pickFeedback: It's quite fragile.
   wrongTargetFeedback: 
   keepAfterUse: 0
