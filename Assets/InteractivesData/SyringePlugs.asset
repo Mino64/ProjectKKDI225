@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2da79969b3ffb2c4f8817f9c07bf0d0c, type: 3}
-  m_Name: DoorButtonNoRequirements
+  m_Name: SyringePlugs
   m_EditorClassIdentifier: 
   isEnabled: 1
   type: 1
@@ -20,10 +20,11 @@ MonoBehaviour:
   wrongTargetFeedback: 
   keepAfterUse: 0
   singleInteraction: 0
-  autoInteract: 0
-  requirements: []
+  autoInteract: 1
+  requirements:
+  - {fileID: 11400000, guid: 70e0172179c02be9cb2da4ff065765c5, type: 2}
   wrongRequirements: []
   interactionMessages:
-  - Push
-  requirementsFeedback: It needs power.
-  interactionFeedback: 
+  - Look
+  requirementsFeedback: It's missing a Syringe.
+  interactionFeedback: Syringe plugged.

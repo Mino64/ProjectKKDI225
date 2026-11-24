@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2da79969b3ffb2c4f8817f9c07bf0d0c, type: 3}
-  m_Name: Fuse
-  m_EditorClassIdentifier: 
+  m_Name: PuzzleInspect
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveData
   isEnabled: 1
-  type: 0
-  inventoryName: Syringe
-  inventoryIcon: {fileID: 3485184536122157715, guid: 21e14dcd1632654439a8b871edd835ce, type: 3}
-  pickFeedback: It's quite fragile.
+  type: 1
+  inventoryName: 
+  inventoryIcon: {fileID: 0}
+  pickFeedback: 
   wrongTargetFeedback: 
   keepAfterUse: 0
-  singleInteraction: 1
+  singleInteraction: 0
   autoInteract: 0
   requirements: []
   wrongRequirements: []
   interactionMessages:
-  - Plug Syringe
+  - to inspect the puzzle
   requirementsFeedback: 
   interactionFeedback: 

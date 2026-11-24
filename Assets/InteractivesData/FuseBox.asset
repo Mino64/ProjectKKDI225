@@ -26,5 +26,5 @@ MonoBehaviour:
   wrongRequirements: []
   interactionMessages:
   - Look
-  requirementsFeedback: It's missing a Syringe.
-  interactionFeedback: Syringe plugged.
+  requirementsFeedback: It's missing a Fuse.
+  interactionFeedback: Fuse plugged.
