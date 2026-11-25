@@ -10330,6 +10330,7 @@ GameObject:
   - component: {fileID: 6346190540658292242}
   - component: {fileID: 230901451384032953}
   - component: {fileID: 1063734101674626322}
+  - component: {fileID: 6346190540658292243}
   m_Layer: 0
   m_Name: Cylinder.001
   m_TagString: Untagged
@@ -10610,6 +10611,7 @@ GameObject:
   - component: {fileID: 2581248401119335070}
   - component: {fileID: 7978539852832689594}
   - component: {fileID: 1638081725508563313}
+  - component: {fileID: 7978539852832689595}
   m_Layer: 0
   m_Name: Cylinder.003
   m_TagString: Untagged
@@ -12610,6 +12612,7 @@ GameObject:
   - component: {fileID: 2210994699455257336}
   - component: {fileID: 941461004058376952}
   - component: {fileID: 954438312064441299}
+  - component: {fileID: 5700963235358618032}
   m_Layer: 0
   m_Name: Cylinder.002
   m_TagString: Untagged
@@ -13244,6 +13247,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7394639667340083688}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5700963235358618032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4871560234777936149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef345c0c9ca790739776543d40bb4a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotatingRings
+  stepAngle: 45
+  rotateDuration: 0.25
+  localAxis: {x: 0, y: 1, z: 0}
+  clockwise: 1
+  cam: {fileID: 3456984984154330370}
 --- !u!1 &5703592816630199969
 GameObject:
   m_ObjectHideFlags: 0
@@ -13722,6 +13742,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671676822252717872}
   m_Mesh: {fileID: -7387706064836869012, guid: 4ee82af696b31174388e269e507ab62c, type: 3}
+--- !u!114 &6346190540658292243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671676822252717872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef345c0c9ca790739776543d40bb4a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotatingRings
+  stepAngle: 45
+  rotateDuration: 0.25
+  localAxis: {x: 0, y: 1, z: 0}
+  clockwise: 1
+  cam: {fileID: 3456984984154330370}
 --- !u!1 &6360605467899551647
 GameObject:
   m_ObjectHideFlags: 0
@@ -14773,6 +14810,23 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7978539852832689595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849465913001443605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef345c0c9ca790739776543d40bb4a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotatingRings
+  stepAngle: 45
+  rotateDuration: 0.25
+  localAxis: {x: 0, y: 1, z: 0}
+  clockwise: 1
+  cam: {fileID: 3456984984154330370}
 --- !u!65 &7985153021345663803
 BoxCollider:
   m_ObjectHideFlags: 0
