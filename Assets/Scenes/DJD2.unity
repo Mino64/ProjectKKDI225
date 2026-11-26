@@ -14790,7 +14790,9 @@ MonoBehaviour:
   _trigger: {fileID: 919132149183526878}
   _focusPoint: {fileID: 1694662344}
   _exitButton: {fileID: 1764333118}
-  _exitActionName: Cancel
+  _movement: {fileID: 0}
+  _camera: {fileID: 0}
+  _exitAction: {fileID: 0}
   _transitionDuration: 0.6
 --- !u!65 &919132149183526880
 BoxCollider:
@@ -15648,8 +15650,10 @@ GameObject:
   - component: {fileID: 6346190540658292242}
   - component: {fileID: 230901451384032953}
   - component: {fileID: 1063734101674626322}
-  m_Layer: 0
-  m_Name: PickableMiddleRing
+  - component: {fileID: 6346190540658292244}
+  - component: {fileID: 6346190540658292243}
+  m_Layer: 6
+  m_Name: PickableMediumRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15906,7 +15910,9 @@ GameObject:
   - component: {fileID: 2581248401119335070}
   - component: {fileID: 7978539852832689594}
   - component: {fileID: 1638081725508563313}
-  m_Layer: 0
+  - component: {fileID: 7978539852832689598}
+  - component: {fileID: 7978539852832689599}
+  m_Layer: 6
   m_Name: PickableSmallRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16338,8 +16344,9 @@ GameObject:
   - component: {fileID: 3316992658215016816}
   - component: {fileID: 9203870080435089959}
   - component: {fileID: 7783642029156241959}
-  - component: {fileID: 9203870080435089961}
+  - component: {fileID: 9203870080435089962}
   - component: {fileID: 9203870080435089960}
+  - component: {fileID: 9203870080435089961}
   m_Layer: 0
   m_Name: BigRing
   m_TagString: Untagged
@@ -17854,7 +17861,9 @@ GameObject:
   - component: {fileID: 2210994699455257336}
   - component: {fileID: 941461004058376952}
   - component: {fileID: 954438312064441299}
-  m_Layer: 0
+  - component: {fileID: 5700963235358618033}
+  - component: {fileID: 5700963235358618032}
+  m_Layer: 6
   m_Name: PickableBigRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18491,6 +18500,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 617875954}
   m_LocalEulerAnglesHint: {x: -49.667, y: -1.866, z: -32.667}
+--- !u!114 &5700963235358618032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4871560234777936149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967b33805825da6a0bc101790dddf279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RingPlacement
+  _pod: {fileID: 7914189270332595029}
+  _revealedPiece: {fileID: 9203870080435089960}
+--- !u!114 &5700963235358618033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4871560234777936149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90187edd6ec0da7488dbf9ea5ec1885a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactive
+  _interactiveData: {fileID: 11400000, guid: 9055d3760eb0669438811c8529f5264e, type: 2}
 --- !u!1 &5703592816630199969
 GameObject:
   m_ObjectHideFlags: 0
@@ -18786,8 +18822,8 @@ GameObject:
   - component: {fileID: 4408748530767494194}
   - component: {fileID: 3129400820594286150}
   - component: {fileID: 208902118555078876}
-  - component: {fileID: 6029364963815450629}
   - component: {fileID: 6029364963815450628}
+  - component: {fileID: 6029364963815450629}
   m_Layer: 0
   m_Name: BaseRings
   m_TagString: Untagged
@@ -19035,6 +19071,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671676822252717872}
   m_Mesh: {fileID: -7387706064836869012, guid: 4ee82af696b31174388e269e507ab62c, type: 3}
+--- !u!114 &6346190540658292243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671676822252717872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967b33805825da6a0bc101790dddf279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RingPlacement
+  _pod: {fileID: 7914189270332595029}
+  _revealedPiece: {fileID: 8513859187384528881}
+--- !u!114 &6346190540658292244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671676822252717872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90187edd6ec0da7488dbf9ea5ec1885a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactive
+  _interactiveData: {fileID: 11400000, guid: 57cce781222791d929ce1d1f6c499d97, type: 2}
 --- !u!1 &6360605467899551647
 GameObject:
   m_ObjectHideFlags: 0
@@ -20188,6 +20251,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7394639667340083688}
   - component: {fileID: 7914189270332595027}
+  - component: {fileID: 7914189270332595029}
+  - component: {fileID: 7914189270332595028}
   m_Layer: 0
   m_Name: Puzzle2_Mdl_Pzl2
   m_TagString: Untagged
@@ -20210,8 +20275,44 @@ MonoBehaviour:
   _trigger: {fileID: 6029364963815450628}
   _focusPoint: {fileID: 120646793}
   _exitButton: {fileID: 1764333118}
-  _exitActionName: Cancel
+  _movement: {fileID: 9155994288462565735}
+  _camera: {fileID: 3456984984154330370}
+  _exitAction: {fileID: -3358212541471239863, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   _transitionDuration: 0.6
+--- !u!65 &7914189270332595028
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7914189270332595026}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.913372, y: 1.8624964, z: 1.6997966}
+  m_Center: {x: -0.037984848, y: 0.4312482, z: 0.0043848157}
+--- !u!114 &7914189270332595029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7914189270332595026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90187edd6ec0da7488dbf9ea5ec1885a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactive
+  _interactiveData: {fileID: 11400000, guid: 93a567584496a037facdef4197198808, type: 2}
 --- !u!114 &7944284136448117955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20331,6 +20432,33 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7978539852832689598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849465913001443605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90187edd6ec0da7488dbf9ea5ec1885a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactive
+  _interactiveData: {fileID: 11400000, guid: 76fbfe978dafcb7e2bdd343b9aa3d8ae, type: 2}
+--- !u!114 &7978539852832689599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849465913001443605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967b33805825da6a0bc101790dddf279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RingPlacement
+  _pod: {fileID: 7914189270332595029}
+  _revealedPiece: {fileID: 8700725330199292364}
 --- !u!65 &7985153021345663803
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20705,10 +20833,11 @@ GameObject:
   - component: {fileID: 6738450967997455373}
   - component: {fileID: 4109396431930990285}
   - component: {fileID: 7071182760840177254}
+  - component: {fileID: 8513859187384528882}
   - component: {fileID: 8513859187384528881}
   - component: {fileID: 8513859187384528880}
   m_Layer: 0
-  m_Name: MiddleRIng
+  m_Name: MediumRIng
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20723,15 +20852,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 8513859187384528879}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aef345c0c9ca790739776543d40bb4a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 32af04b1c238db391b66b4716623ac88, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotatingRings
-  stepAngle: 45
-  rotateDuration: 0.25
-  localAxis: {x: 0, y: 1, z: 0}
-  clockwise: 1
-  cam: {fileID: 3456984984154330370}
---- !u!64 &8513859187384528881
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleClickTarget
+  _piece: {fileID: 8513859187384528881}
+--- !u!114 &8513859187384528881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8513859187384528879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e7b8a9f500766d79361516599e0e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotatingPiece
+  _localAxis: {x: 0, y: 1, z: 0}
+  _stepAngle: 45
+  _rotateDuration: 0.25
+  _solutionStep: 0
+--- !u!64 &8513859187384528882
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20922,6 +21063,7 @@ GameObject:
   - component: {fileID: 5666261586191271192}
   - component: {fileID: 4812060307656800833}
   - component: {fileID: 1129496810017219941}
+  - component: {fileID: 8700725330199292365}
   - component: {fileID: 8700725330199292364}
   - component: {fileID: 8700725330199292363}
   m_Layer: 0
@@ -20940,15 +21082,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 8700725330199292362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aef345c0c9ca790739776543d40bb4a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 32af04b1c238db391b66b4716623ac88, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotatingRings
-  stepAngle: 45
-  rotateDuration: 0.25
-  localAxis: {x: 0, y: 1, z: 0}
-  clockwise: 1
-  cam: {fileID: 3456984984154330370}
---- !u!64 &8700725330199292364
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleClickTarget
+  _piece: {fileID: 8700725330199292364}
+--- !u!114 &8700725330199292364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8700725330199292362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e7b8a9f500766d79361516599e0e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotatingPiece
+  _localAxis: {x: 0, y: 1, z: 0}
+  _stepAngle: 45
+  _rotateDuration: 0.25
+  _solutionStep: 0
+--- !u!64 &8700725330199292365
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -21466,15 +21620,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 2490194675482962378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aef345c0c9ca790739776543d40bb4a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b0e7b8a9f500766d79361516599e0e5d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotatingRings
-  stepAngle: 45
-  rotateDuration: 0.25
-  localAxis: {x: 0, y: 1, z: 0}
-  clockwise: 1
-  cam: {fileID: 3456984984154330370}
---- !u!64 &9203870080435089961
+  m_EditorClassIdentifier: Assembly-CSharp::RotatingPiece
+  _localAxis: {x: 0, y: 1, z: 0}
+  _stepAngle: 45
+  _rotateDuration: 0.25
+  _solutionStep: 0
+--- !u!114 &9203870080435089961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2490194675482962378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32af04b1c238db391b66b4716623ac88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleClickTarget
+  _piece: {fileID: 9203870080435089960}
+--- !u!64 &9203870080435089962
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

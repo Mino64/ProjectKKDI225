@@ -24,6 +24,6 @@ MonoBehaviour:
   requirements: []
   wrongRequirements: []
   interactionMessages:
-  - to inspect the puzzle
+  - Inspect the puzzle
   requirementsFeedback: 
   interactionFeedback: 

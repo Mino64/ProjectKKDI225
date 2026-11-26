@@ -216,7 +216,6 @@ public class Interactive : MonoBehaviour
     {
         if (!_isReady)
         {
-            Debug.Log("Fail");
             if (InventoryHasRequirementSelected())
                 UseRequirementFromInventory();
             else if (InventoryHasWrongRequirementSelected())
@@ -226,7 +225,6 @@ public class Interactive : MonoBehaviour
         }
         else
         {
-            Debug.Log("Success");
             ++_interactionCount;
 
             if (interactiveData.singleInteraction)
