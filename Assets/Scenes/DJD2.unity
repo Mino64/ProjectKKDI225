@@ -4475,6 +4475,84 @@ CapsuleCollider:
   m_Height: 54.129356
   m_Direction: 1
   m_Center: {x: 0, y: 10.767903, z: 0}
+--- !u!1 &612243136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 612243137}
+  - component: {fileID: 612243139}
+  - component: {fileID: 612243138}
+  m_Layer: 0
+  m_Name: PuzzleLogic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &612243137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612243136}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7394639667340083688}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &612243138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612243136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6aa76ad95a11ab8805b864219177d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationPuzzle
+  _focus: {fileID: 612243139}
+  _pieces:
+  - {fileID: 9203870080435089960}
+  - {fileID: 8513859187384528881}
+  - {fileID: 8700725330199292364}
+  _clickAction: {fileID: 3001919216989983466, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  _pointAction: {fileID: -1654692200621890270, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  _clickMask:
+    serializedVersion: 2
+    m_Bits: 4
+  _maxClickDistance: 10
+  _alternateDirections: 1
+  _shuffleOnStart: 0
+  _resetOnFocusExit: 1
+--- !u!114 &612243139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612243136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab94d5012f4e4799b24ebd2e823fa9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleFocus
+  _trigger: {fileID: 6029364963815450628}
+  _focusPoint: {fileID: 120646793}
+  _exitButton: {fileID: 1764333118}
+  _movement: {fileID: 9155994288462565735}
+  _camera: {fileID: 3456984984154330370}
+  _exitAction: {fileID: -3358212541471239863, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  _transitionDuration: 0.6
 --- !u!1 &617875953
 GameObject:
   m_ObjectHideFlags: 0
@@ -14790,9 +14868,9 @@ MonoBehaviour:
   _trigger: {fileID: 919132149183526878}
   _focusPoint: {fileID: 1694662344}
   _exitButton: {fileID: 1764333118}
-  _movement: {fileID: 0}
-  _camera: {fileID: 0}
-  _exitAction: {fileID: 0}
+  _movement: {fileID: 9155994288462565735}
+  _camera: {fileID: 3456984984154330370}
+  _exitAction: {fileID: -3358212541471239863, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   _transitionDuration: 0.6
 --- !u!65 &919132149183526880
 BoxCollider:
@@ -16347,8 +16425,8 @@ GameObject:
   - component: {fileID: 9203870080435089962}
   - component: {fileID: 9203870080435089960}
   - component: {fileID: 9203870080435089961}
-  m_Layer: 0
-  m_Name: BigRing
+  m_Layer: 2
+  m_Name: LargeRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19775,6 +19853,7 @@ Transform:
   - {fileID: 6738450967997455373}
   - {fileID: 3316992658215016816}
   - {fileID: 120646793}
+  - {fileID: 612243137}
   m_Father: {fileID: 4907932847342877677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7398927049867684564
@@ -20250,7 +20329,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7394639667340083688}
-  - component: {fileID: 7914189270332595027}
   - component: {fileID: 7914189270332595029}
   - component: {fileID: 7914189270332595028}
   m_Layer: 0
@@ -20260,25 +20338,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7914189270332595027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7914189270332595026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ab94d5012f4e4799b24ebd2e823fa9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PuzzleFocus
-  _trigger: {fileID: 6029364963815450628}
-  _focusPoint: {fileID: 120646793}
-  _exitButton: {fileID: 1764333118}
-  _movement: {fileID: 9155994288462565735}
-  _camera: {fileID: 3456984984154330370}
-  _exitAction: {fileID: -3358212541471239863, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  _transitionDuration: 0.6
 --- !u!65 &7914189270332595028
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20836,7 +20895,7 @@ GameObject:
   - component: {fileID: 8513859187384528882}
   - component: {fileID: 8513859187384528881}
   - component: {fileID: 8513859187384528880}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: MediumRIng
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21066,7 +21125,7 @@ GameObject:
   - component: {fileID: 8700725330199292365}
   - component: {fileID: 8700725330199292364}
   - component: {fileID: 8700725330199292363}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SmallRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
