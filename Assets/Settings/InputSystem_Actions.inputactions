@@ -107,6 +107,16 @@
                     "priority": 0
                 },
                 {
+                    "name": "Slot6",
+                    "type": "Button",
+                    "id": "506c7d48-2993-4427-9683-899821cf060f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
                     "name": "Escape",
                     "type": "Button",
                     "id": "d37215fd-af5b-44b2-9467-84a791f5fec7",
@@ -412,6 +422,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Slot5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4a425910-657b-46e0-8293-4607948c7542",
+                    "path": "<Keyboard>/6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Slot6",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
