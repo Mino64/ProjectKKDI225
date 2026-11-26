@@ -3756,8 +3756,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 64c3f170efa79cc43a9fa7a357a433d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1793071718}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -7146521406498821007, guid: 64c3f170efa79cc43a9fa7a357a433d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 650925658}
+    - targetCorrespondingSourceObject: {fileID: -7146521406498821007, guid: 64c3f170efa79cc43a9fa7a357a433d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 650925657}
+    - targetCorrespondingSourceObject: {fileID: -7146521406498821007, guid: 64c3f170efa79cc43a9fa7a357a433d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 650925656}
   m_SourcePrefab: {fileID: 100100000, guid: 64c3f170efa79cc43a9fa7a357a433d1, type: 3}
 --- !u!1 &513911998
 GameObject:
@@ -4613,7 +4625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleFocus
   _trigger: {fileID: 6029364963815450628}
   _focusPoint: {fileID: 120646793}
-  _exitButton: {fileID: 0}
+  _exitButton: {fileID: 1602990984}
   _movement: {fileID: 9155994288462565735}
   _camera: {fileID: 3456984984154330370}
   _exitAction: {fileID: -3358212541471239863, guid: 052faaac586de48259a63d0c4782560b, type: 3}
@@ -4894,6 +4906,64 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 920e45733533691489b30275ef878b87, type: 3}
+--- !u!1 &650925652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7146521406498821007, guid: 64c3f170efa79cc43a9fa7a357a433d1, type: 3}
+  m_PrefabInstance: {fileID: 503795987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &650925656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650925652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab94d5012f4e4799b24ebd2e823fa9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleFocus
+  _trigger: {fileID: 650925657}
+  _focusPoint: {fileID: 1793071718}
+  _exitButton: {fileID: 1602990984}
+  _movement: {fileID: 9155994288462565735}
+  _camera: {fileID: 3456984984154330370}
+  _exitAction: {fileID: -3358212541471239863, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  _transitionDuration: 0.6
+--- !u!114 &650925657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650925652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90187edd6ec0da7488dbf9ea5ec1885a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactive
+  _interactiveData: {fileID: 11400000, guid: ed6d3a278eaa785298f7406436510259, type: 2}
+--- !u!65 &650925658
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650925652}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.763504, y: 12.851241, z: 15.576803}
+  m_Center: {x: -0.8536805, y: 0, z: -0.000000012721284}
 --- !u!1 &657939256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2eb3ba7ed04c9b14692485949f1d6ba0, type: 3}
@@ -6631,6 +6701,38 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.1698623, y: 1.9999994, z: 2.0140023}
   m_Center: {x: -0.63000685, y: 0, z: -0.010429949}
+--- !u!114 &979958570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833132485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90187edd6ec0da7488dbf9ea5ec1885a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactive
+  _interactiveData: {fileID: 11400000, guid: ed6d3a278eaa785298f7406436510259, type: 2}
+--- !u!114 &979958571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833132485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab94d5012f4e4799b24ebd2e823fa9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleFocus
+  _trigger: {fileID: 979958570}
+  _focusPoint: {fileID: 1165291110}
+  _exitButton: {fileID: 1602990984}
+  _movement: {fileID: 9155994288462565735}
+  _camera: {fileID: 3456984984154330370}
+  _exitAction: {fileID: -3358212541471239863, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  _transitionDuration: 0.6
 --- !u!1001 &999516627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7471,6 +7573,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e6d2ed62e9cbfe4cacf5eb53987261d, type: 3}
+--- !u!1 &1165291109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1165291110}
+  m_Layer: 0
+  m_Name: FocusPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1165291110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165291109}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0040278514, y: 0.7272739, z: 0.0032240117, w: -0.68632793}
+  m_LocalPosition: {x: 18.123503, y: -0.0041154497, z: 0.09247227}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 979958564}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1181355690
 GameObject:
   m_ObjectHideFlags: 0
@@ -7988,11 +8121,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0c0299984d7b3564a91a1af25ce4a64e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1165291110}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c0299984d7b3564a91a1af25ce4a64e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 979958567}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c0299984d7b3564a91a1af25ce4a64e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 979958571}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c0299984d7b3564a91a1af25ce4a64e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 979958570}
   m_SourcePrefab: {fileID: 100100000, guid: 0c0299984d7b3564a91a1af25ce4a64e, type: 3}
 --- !u!1 &1256546113 stripped
 GameObject:
@@ -11967,6 +12109,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1793071717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1793071718}
+  m_Layer: 0
+  m_Name: FocusPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1793071718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793071717}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.25399238, y: 0.123508595, z: -0.032053474, w: 0.95875233}
+  m_LocalPosition: {x: 19.676754, y: 3.8320732, z: 4.3845124}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1481120396}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1801580181
 GameObject:
   m_ObjectHideFlags: 0
@@ -15021,7 +15194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleFocus
   _trigger: {fileID: 919132149183526878}
   _focusPoint: {fileID: 1694662344}
-  _exitButton: {fileID: 0}
+  _exitButton: {fileID: 1602990984}
   _movement: {fileID: 9155994288462565735}
   _camera: {fileID: 3456984984154330370}
   _exitAction: {fileID: -3358212541471239863, guid: 052faaac586de48259a63d0c4782560b, type: 3}
